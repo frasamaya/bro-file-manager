@@ -2,3 +2,4 @@
 .env.local
 .git
 node_modules/
+audit.log
