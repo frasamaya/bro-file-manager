@@ -29,6 +29,7 @@ Current implementation notes:
 - README includes featured image (brofm.jpg).
 - Changelog and versioning docs added.
 - Changelog updated for icon-only reset/logout controls.
+- Version bumped to 0.2.0 for zip archive release changes.
 
 ## P0 - Easy auth + read-only baseline (function first)
 - [x] Authentication: local admin password
