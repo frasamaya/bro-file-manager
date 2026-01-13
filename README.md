@@ -99,8 +99,9 @@ docker compose up --build
 ```
 
 The default compose file maps `3033:3033` and mounts `./data` into `/data` for `FILE_ROOT`.
-Update `docker-compose.yml` with your real secrets and paths, or override them with environment
-variables. If you use `USERS_FILE`, mount it into the container and set the path accordingly.
+Set `HOST_DATA_PATH` and `HOST_LOGS_PATH` in `.env` to override host mount paths without editing
+`docker-compose.yml`. If you use `USERS_FILE`, mount it into the container and set the path
+accordingly.
 
 ### PM2
 Build the frontend once, then run the server with PM2:

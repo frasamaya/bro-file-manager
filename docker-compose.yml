@@ -12,6 +12,7 @@ services:
     # Optionally load environment variables from .env (Compose-level).
     # env_file:
     #   - .env
+    # Override host mount paths via HOST_DATA_PATH / HOST_LOGS_PATH in .env if needed.
     volumes:
-      - ./data:/data
-      - ./logs:/app/logs
+      - ${HOST_DATA_PATH:-./data}:/data
+      - ${HOST_LOGS_PATH:-./logs}:/app/logs

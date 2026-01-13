@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on Keep a Changelog, and this project follows SemVer.
 
 ## [Unreleased]
+### Changed
+- Docker Compose host mount paths can be overridden via `HOST_DATA_PATH` and `HOST_LOGS_PATH`.
 
 ## [0.2.1] - 2026-01-13
 ### Added
