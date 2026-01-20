@@ -10,6 +10,8 @@
 - Batch downloads as zip or tar.gz, with large zips switching to store mode.
 - Search, filters, sorting, pagination, and a recent view for large directories.
 - Image preview popup and text preview (first 200 KB).
+- Grid/thumbnail view toggle for browsing files and folders.
+- Built-in code editor (Ace) for common web files with syntax highlighting, fullscreen, and new-tab editing.
 - Local users with roles and per-share roots; stateless signed session cookie.
 - Audit logging for file actions.
 - Safe path normalization with symlink avoidance to prevent traversal.
@@ -19,6 +21,7 @@
 - Restore the last visited folder on refresh.
 - Session cookies set `Secure` based on request scheme (supports HTTP in local Docker).
 - Docker Compose host mounts can be overridden via `HOST_DATA_PATH` and `HOST_LOGS_PATH`.
+- Added grid view thumbnails and an in-app editor for HTML/PHP/JS/CSS/JSON/Markdown.
 
 ## Requirements
 - Bun >= 1.1
