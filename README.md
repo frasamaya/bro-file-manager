@@ -80,6 +80,22 @@ Password hash format is `scrypt$<base64 salt>$<base64 hash>`. You can generate o
 bun -e 'const { randomBytes, scryptSync } = require("crypto"); const salt = randomBytes(16); const hash = scryptSync(process.argv[1], salt, 32); console.log(`scrypt$${salt.toString("base64")}$${hash.toString("base64")}`);' "your-password"
 ```
 
+### S3 storage (optional)
+Enable S3 storage by setting `STORAGE_MODE=s3` (or just define `S3_BUCKET`).
+When enabled, `FILE_ROOT` is ignored and user roots map to S3 prefixes.
+
+```sh
+STORAGE_MODE=s3                 # or omit and set S3_BUCKET
+S3_BUCKET=your-bucket
+AWS_REGION=ap-southeast-1       # or S3_REGION
+AWS_ACCESS_KEY_ID=...           # optional if using IAM roles/instance profiles
+AWS_SECRET_ACCESS_KEY=...       # optional if using IAM roles/instance profiles
+AWS_SESSION_TOKEN=...           # optional (for temporary credentials)
+S3_ROOT_PREFIX=brofm            # optional prefix inside the bucket
+S3_ENDPOINT=https://...         # optional (for S3-compatible storage)
+S3_FORCE_PATH_STYLE=true        # optional (for MinIO, etc)
+```
+
 ## Build the frontend 👷🏻
 
 ```sh

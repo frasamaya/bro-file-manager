@@ -1,0 +1,40 @@
+# Node
+node_modules/
+
+# Bun
+.bun/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Misc
+*.local
+*.cache
+
+# Dependency directories
+.pnpm/
+
+# Test coverage
+coverage/
+
+# Docker
+*.pid
+
+# Others
+*.tgz
