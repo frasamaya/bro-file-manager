@@ -167,4 +167,15 @@ See `CHANGELOG.md` for release notes and details on the fork and enhancements.
 - Deletes move items into `/.trash`; restore requires the original parent path to exist.
 - Audit logs are written to `./audit.log` by default (override with `AUDIT_LOG_PATH`).
 
+## TODO
+1. Support database-backed metadata.
+2. Secure file access and shared links.
+3. Share using PIN or password.
+4. Share expiration settings.
+5. Share to selected email/user.
+6. Support user self-registration.
+7. Different root path for each user.
+8. Shared folders.
+9. "Shared with me" inbox.
+
 Build with ❤️ from Jogja & Jetorbit
